@@ -2,7 +2,7 @@
 
 -----------------------------------------------------------------------------------------------
 
-create a user in my sql named 'Library', password 'Library'.
+create a user in my sql named 'Library', password 'Library', database = Library;
 -----------------------------------------------------------------------------------------------
 
 Create table books; name varchar, author varchar, publisher varchar, isbn varchar, Genre varchar
