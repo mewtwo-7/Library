@@ -17,7 +17,7 @@ Create table request; bookname varchar, request varchar,
 Insert user as--->
 -----------------------------------------------------------------------------------------------
 
-name: Admin email: admin@gmail.com password: admin /// This will be your admin....
+Insert Admin as first person in database with name as Admin and email paswword as you want...
 -----------------------------------------------------------------------------------------------
 
 then npm install and, npm start.
