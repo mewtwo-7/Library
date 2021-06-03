@@ -20,9 +20,16 @@ exports.login = (req,res) => {
             {
                 return res.render("login",{message: 'Enter full details.'});
             }
-            else if(!results ||!(await bcrypt.compare(password,results[0].password)))
+            else if(!results)
             {
                 return res.render("login",{message: 'Incorrect details'});
+            }
+            else if(results)
+            {
+                if(!(await bcrypt.compare(password,results[0].password)))
+                {
+                    return res.render("login",{message: 'Incorrect details'});
+                }
             }
             else
             {                 
