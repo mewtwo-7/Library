@@ -30,8 +30,7 @@ exports.login = (req,res) => {
                 {
                     return res.render("login",{message: 'Incorrect details'});
                 }
-            }
-            else
+                else
             {                 
                     const token = jwt.sign(results[0].id,process.env.ACCESS_TOKEN);
                     const cookieOptions = {
@@ -44,6 +43,8 @@ exports.login = (req,res) => {
                     res.status(200).redirect("/"); 
                 
             }
+            }
+            
         })
 
     }catch(error){
